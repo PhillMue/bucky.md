@@ -31,6 +31,25 @@ This is a way of giving java many options for an 'if' statement. 'else if' is pl
 
 Curly braces are not required in an 'else if' statement. Use when one option is required of many.
 
+##CONDITIONAL OPERATORS
+Example of a conditional operator is:
+System.out.println(age > 50 ? "Old": "Young")
+
+the question mark in the function makes it a boolean. If age is greater than 50, "Old" is printed. otherwise, "Young" is printed. The value on the left represents true and that on the right represents false.
+
+##VIDEO 21: SIMPLE AVERAGING PROGRAM
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
