@@ -39,6 +39,51 @@ the question mark in the function makes it a boolean. If age is greater than 50,
 
 ##VIDEO 21: SIMPLE AVERAGING PROGRAM
 
+import scanner is used when values need to be input when the program runs.
+
+*IMPORT SCANNER*
+*Outside the class type: import.java.util.*;
+Within the class create object : Scanner Scannerobj = new Scanner(System.in);*
+ 
+Use a while loop. Within the loop set an int variable equal to Scannerobj.nextInt();. Accumulate the sum using the loop and find average using by dividing the total by by the number of integers input.
+
+##VIDEO 22: FOR LOOPS
+
+Structure: for(int x = 0; x>10; x++)
+
+The first statement shows where the loop starts, the second here it ends and the third the increments/decrements the value of the counter undergoes.
+
+##VIDEO 23: COMPOUND INTEREST PROGRAM(COMPOUNDING NUMBERS)
+
+Set the variables: double amount, double principal and double rate. Rate and principal are specified.
+
+Using the for loop set the time as a condition.
+
+* USING POWERS*
+
+ * Formula: MAth.pow(arg0, arg1)*
+
+ * arg0 is the number or expression while arg1 is the power.*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
