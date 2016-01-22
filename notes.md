@@ -41,8 +41,8 @@ the question mark in the function makes it a boolean. If age is greater than 50,
 
 import scanner is used when values need to be input when the program runs.
 
-*IMPORT SCANNER*
-*Outside the class type: import.java.util.*;
+    IMPORT SCANNER
+    Outside the class type: import.java.util.*;
 Within the class create object : Scanner Scannerobj = new Scanner(System.in);*
  
 Use a while loop. Within the loop set an int variable equal to Scannerobj.nextInt();. Accumulate the sum using the loop and find average using by dividing the total by by the number of integers input.
@@ -59,11 +59,83 @@ Set the variables: double amount, double principal and double rate. Rate and pri
 
 Using the for loop set the time as a condition.
 
-* USING POWERS*
+    USING POWERS
 
- * Formula: MAth.pow(arg0, arg1)*
+ Formula: MAth.pow(arg0, arg1).
 
- * arg0 is the number or expression while arg1 is the power.*
+      arg0 is the number or expression while arg1 is the power.
+
+#VIDEO 24:DO WHILE LOOP
+It executes the loop at least once even if the test condition is false unlike the while loop.
+
+STRUCTURE: do{Statements}while(condition);
+
+#VIDEO 25: MATH CLASS METHODS
+Math.max(x, y); Gives the maximum of two numbers.
+
+Math.min(x, y); Gives the minumum of two numbers.
+
+Math.sqrt(x); Square root of a number.
+
+Math.abs(x); Gives you the absolute value of a number(number always becomes positve).
+
+Math.ceil(x); Rounds up the number.
+
+#VIDEO 26:RANDOM NUMBER GENERATOR
+
+
+Math.floor(x); Rounds down the number.
+
+#VIDEO 26: RANDOM NUMBER GENERATOR
+
+Import the random number generator utility and create an object of it.
+
+     EXAMPLE
+
+     import.java.util.Random;
+
+ Random randomobj = new Random();
+Calling the object prints numbers from 0 if the statement is typed as: number = randomobj.nextInt(range);.
+
+One should instead type it as umber = 1 + randomobj.nextInt(range); to get the specified numbers in the range.
+
+#VIDEO 27: INTRODUCTION TO ARRAYS
+
+This is a variable that can store many values in it of the same data type.
+
+Structure of an int array: int arrayname[ ]=new int[x];. Where x is equal to number of variables being stored.
+
+Storage indexes start from 0. To store values use the indexes to replace x. For example: arrayname[0] =44;
+
+To shorten amking an array use an initializer. For example: int arrayname[ ]={1,2,3,4,5};
+
+#VIDEO 28:  CREATING AN ARRAY TABLE
+
+    NOTE: "\ t" in a string means a tab of about five spaces.
+       arrayname.length store the number of values inyour array.
+       
+Print "index" and "value" first with a tab (\t) then print the indexes and values of the array using a loop.
+
+#VIDEO 29: SUMMING ELEMENTS OF ARRAYS
+
+Create an array containing numbers and a sum variable initialized as 0;
+
+Using a for loop add array values to the sum.
+
+**NOTE: Use arrayname.length**
+
+#VIDEO 30: ARRAY ELEMENTS AS COUNTERS
+
+Import random utility and create its object.
+
+Create an array to store the frequency at which a number appears. Afterwards, use a for loop to input the frquency.
+
+Formula in loop: ++arrayname[1+randomobj.nextInt(x)];. Where x is equal to the range of numbers available to the random utility.
+
+Print element and frequency.
+
+Since elements are the numbers 1-6,use another for loop with x initialized as 1 and ending as arraynane.length to printthe actual values of elements and their frequencies.
+
 
 
 
