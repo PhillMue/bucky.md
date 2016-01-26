@@ -218,7 +218,84 @@ This is done using different numbers of arguments for each constructor created i
 This allows the user to enter specific sets of information to perform specific different tasks.
 #VIDEO 40: SET AND GET METHODS
 
-These enable you to set and get private variables
+These enable you to set and get private variables.
+#VIDEO 46: STATIC
+
+This modifier enables you to share values with all objects in a class.
+
+For example, members in a club initialized as a private int equal to 0. If the value of members in the constructor is set to member++; each object creation increases the members variable automatically.
+
+#VIDEO 47: MORE ON STATIC
+
+Use a static get method to call static variables in a class.
+
+With static type you can use a class instead of an object to call the static method; since static methods are shared among all objects.
+
+#VIDEO 48: FINAL
+
+Always put constants in capital letters. Final type variables become constants(they cannot change after being set).
+
+You can initialize final type variables in constructors.
+
+#VIDEO 49: INHERITANCE
+
+Syntax: public class child extends parent{}
+
+Using the extends keyword one can get all methods within a parent class without retyping them.
+
+Creating a method again in child class overrides the inherited methods.
+
+A child of a child class inherits public methods of its parent class and its parent's class parent class.
+#VIDEO 50: GUI
+
+The method used to do this is to use the inbuilt class JOption.
+
+  Import the class using: import javax.swing.JOptionPane;
+EXAMPLE OF USAGE: Creating a program which take two numbers separately and shows your sum.
+
+  public static void main(String[] args){
+  String number1 = JOptionPane.showInputDialog("Enter first number");
+  String number2 = JOptionPane.showInputDialog("Enter second number");
+
+  int num1 = Integer.parseInt(number1);
+  int num2 = Integer.parseInt(number2);
+  int sum = num1 + num2;
+
+  JOptionPane.showMessageDialog(null, "The answer is " + sum, "the title", JOptionPane.PLAIN_MESSAGE);}
+  
+#VIDEO 51: GUI WITH JFRAME
+
+      This is to build a program which inherits the looks and feel of the OS on which it is run.
+
+      From class without main method
+
+        import java.awt.FlowLayout;      To avoid programming a layout.
+        import javax.swing.JFrame;       Basic window layout
+        import javax.swing.JLabele;      A line a text; allows you to do simple images.
+
+         public class classname extends JFrame{
+         private Jlabel item1;
+
+          public classname(){
+          super("title");                              Title being used
+          setLayout(new FlowLayout ());                Setting the layout
+
+          item1 = new JLabel("This is a sentence");    A sentence
+          item1.setToolTipText("shows up on hover");   Appears on hovering
+          }
+           }
+
+
+   From class with main method
+
+   import javax.swing.JFrame;
+
+   main method(){
+   classname obj new classname();
+   obj.setDefaultCloseOperation(JFrame.EXIT_ ON _CLOSE);
+   obj.setSize(275,189);
+   obj.setVisible(true);
+   }
 
 
 
