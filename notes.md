@@ -123,7 +123,6 @@ Create an array containing numbers and a sum variable initialized as 0;
 Using a for loop add array values to the sum.
 
 **NOTE: Use arrayname.length**
-
 #VIDEO 30: ARRAY ELEMENTS AS COUNTERS
 
 Import random utility and create its object.
@@ -135,8 +134,91 @@ Formula in loop: ++arrayname[1+randomobj.nextInt(x)];. Where x is equal to the r
 Print element and frequency.
 
 Since elements are the numbers 1-6,use another for loop with x initialized as 1 and ending as arraynane.length to printthe actual values of elements and their frequencies.
+#VIDEO 31: ENHACED FOR LOOP
 
+To use this initialze an array then start a for loop statement.
 
+Structure: For(int x: arrayyname)
+#VIDEO 32: ARRAYS IN METHODS
+
+First initialize an array(int y[]) within the main method.
+
+Afterwards create a method int the class with a parameter of the same data type(int x[]).Use a for loop to add a number to each element of this array.For example: x[counter]+=5.
+
+Call the method in the array within the main method to add 5 to each element within array y using: methodName(y);
+#VIDEO 33: MULTIDIMENSIONAL ARRAYS
+
+These are arrays which contain more than a single array within them. They are use to create tables and store coordinates.
+
+For example: int array[][]={{1,2,3,4,5}{6,7,8,9,0}}
+
+To call elements use array index and element index while remembering that indexes start from 0.
+#VIDEO 34: TABLE FOR MULTIDIMENSIONAL ARRAYS
+
+To create tables showing all the the data in the multimensional arrays, create a method with an array as its parameter and containing two for loops(one is nested) to display the rows and columns. The first loop loops to the length of the first index of multidimensional array in the parameters while the second loops using both indexes.
+
+    EXAMPLE
+
+    public static void table(int x [][]){
+    for (int row=0; row<x.length;row++){
+       for(int column=0;column<x[row].length;column++){
+          System.out.println(x[row][column]);
+          }
+       }
+    }
+Afterwards call this in the main method,for example: table(arrayname);, to print the array as a table.
+#VIDEO 35: VARIABLE LENGTH ARGUMENTS
+
+This is used when the number of variables being input is unknown. To use it you type: int...variablename.
+
+To calculate average using this do:
+
+   public static int average(int...varname){
+      int sum=0;
+      for(intx:varname){
+         sum+=x;
+      }
+      return sum/varname.length;
+   }
+Afterwards call this method in the main method while inputting the required number as parameters. For example: average(1,2,3,4,5,6);
+#VIDEO 36: 24 HOUR TIME CLASS
+
+Create a class with the private variables hour, minute and second. Within the class create the setTime method with parameters representing the aforementioned variables.
+
+In the setter equate the private variables to the parameters while inputting conditions. Replace 24 with 60 for minute and second. The last part of the conditional sets default value as 0;
+
+ Example
+ hour = ((h>=0 && h<24 ? h : 0)
+For the 24 hour system create a method containing the statement below:
+
+public String fullHours(){
+return String.format("%02d:%02d:%02d", hour, minute, second);
+}
+%02d represents setting the numbers shown for time for each unit to two integers.
+#VIDEO 37: 12 HOUR TIME CLASS
+
+Create another method in the time class.
+
+  public String halfHours(){
+     return String.format("%d:%02d:%02d %s", ((hour==0 || hour==12) ? 12: hour%12), minute, second, (hour < 12? "AM":"PM"));
+  }
+Use the setter in the main method of the main class to set the time after creating an object.
+
+#VIDEO 38: PUBLIC, PRIVATE AND THIS
+
+Private prevents use of variables outside a class.
+
+Public allows use of variables outside a class.
+
+.this prefixed to a variable ensures that variables refered to in a method are those within the method instead of variables outside of a method if the have the same name.
+#VIDEO 39: MULTIPLE CONSTRUCTORS
+
+This is done using different numbers of arguments for each constructor created in a class.
+
+This allows the user to enter specific sets of information to perform specific different tasks.
+#VIDEO 40: SET AND GET METHODS
+
+These enable you to set and get private variables
 
 
 
